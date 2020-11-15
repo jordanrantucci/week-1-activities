@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Positioning Demo</title>
+  <link rel="stylesheet" type="text/css" href="./positioning.css">
+</head>
+
+<body>
+  <!--Fixed div this is an element with position:fixed is positioned relative to the viewport
+  which means it always stays in the same place even if the page is scrolled. the top, right,  bottom,
+and left properties are used to position th element. A fixed element does not leave a gap in the page
+where it would normally have been located-->
+  <div id="fixed">
+    &lt;div&gt;<br> position: fixed
+  </div>
+
+  <!--Wrapper: a new document is an element that wraps everything else on the page. The term wrapper is common
+  for that. We give it a class and the class is responsible fore encapsulating all visual elements on the page. -->
+<div class="wrapper">
+
+  <section id="content">
+  
+<h1>Heading</h1>
+
+<!--First Paragraph of text-->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis consectetur diam at imperdiet. Phasellus
+  rutrum ut mauris tristique vehicula. Aliquam ac justo faucibus, vulputate libero vel, molestie ante. Cras quis nulla a
+  tellus maximus varius vel eget est. Cras auctor ipsum ut risus porttitor blandit. Praesent pulvinar quam ac purus
+  gravida, elementum rhoncus arcu tempor. Ut fringilla, augue in lacinia rhoncus, elit quam sagittis felis, quis
+  convallis arcu ex eget augue.</p>
+
+<!--Relatively postioned div An element with postion: relative; is positioned relative to its normal postion.
+Setting the top, right, bottom, and left properties ofa relatively-postitioned element will cause it to be adjusted away
+from its normal position.  Other content will not be adjusted to fit into any gap left by the element -->
+  <div id="relative">
+    &lt;div&gt;<br> position: relative
+      <!--A div positioned absolutely in the relative div an element with position: absolute; is positioned relative to the nearest position ancestor
+      instead of positioned relative to the viewport, like fixed.  However, if an absolute postioned element has no positioned ancestors, it uses the 
+      document body, and moves along with the page scrolling -->
+    <div id="absolute">
+      &lt;div&gt;<br> position: absolute
+    </div>
+  </div>
+
+  <!--2nd paragraph of text-->
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis consectetur diam at imperdiet. Phasellus
+  rutrum ut mauris tristique vehicula. Aliquam ac justo faucibus, vulputate libero vel, molestie ante. Cras quis nulla a
+  tellus maximus varius vel eget est. Cras auctor ipsum ut risus porttitor blandit. Praesent pulvinar quam ac purus
+  gravida, elementum rhoncus arcu tempor.</p>
+
+   </section>
+</div>
+</body>
+
+</html>
