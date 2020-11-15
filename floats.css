@@ -1,0 +1,81 @@
+/**
+ * Float Layout Activity
+ **/
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-size:24px;
+  line-height: 32px;
+  color: #333
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  background-color: #FFA500;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#left { 
+  color: #333;
+  background-color: #30948d;
+  float: left;
+  color: #ffffff;
+  width: 33.3%
+}
+
+#middle { 
+  background-color: #9E1212;
+  float: left;
+  color: #fff;
+  width: 33.3%
+}
+
+#right { 
+  background-color: #30948D;
+  float: left;
+  color: #ffffff;
+  width: 33.3%
+}
+
+#full { 
+  width: 100%;
+  overflow: auto;
+  clear: both;
+  background-color: #394549;
+  color: #fff
+}
+
+/* this is specificially for the style of only the division */
+
+#division { 
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #214fb3;
+}
+
+aside { 
+  float: left;
+  width: 33%;
+  height: 200px;
+  padding: 20px;
+  margin-left: 30px;
+  background-color: #a6b747;
+  border: 1px solid #eee;
+}
+
+footer { padding: 20px;
+  margin-bottom: 20px;
+  clear: both;
+  background-color: #FFA500;
+}
